@@ -19,9 +19,6 @@ div[class*="col"] {
 /* CLASES */
 /* ///// */
 
-.logo-bg {
-    background-color: #ff8bff;
-}
 
 .high-text {
     font-size: 55px;
@@ -49,6 +46,7 @@ body {
     border: 1.8px solid #ff8bff;
     padding-left: 21px;
     padding-right: 21px;
+    border-radius: 13px;
 }
 
 .card-2 {
@@ -90,10 +88,6 @@ body {
 .error-validacion {
     color: red;
 }
-/* 
-.input-error {
-    border: 2px solid red;
-} */
 
 .sugerencia {
     color: rgb(175, 175, 175);
@@ -119,4 +113,22 @@ body {
     border-radius: 5px;
     padding-top: 8px;
     padding-bottom: 8px;
+}
+
+.c-bg {
+    background-color: #ff8bff;
+}
+
+.cerrar-serion {
+    margin-top: 13px;
+    text-align: right;
+}
+
+.btn-bg {
+    background-color: #070fab;
+}
+
+.btn-largo {
+    padding-left: 55px;
+    padding-right: 55px;
 }

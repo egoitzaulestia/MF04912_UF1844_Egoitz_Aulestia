@@ -39,7 +39,10 @@ setcookie('pagina', $_SERVER['PHP_SELF']);
                         <input type="password" class="form-control <?php echo !empty($_SESSION['passwordError']) ? 'input-error' : ''; ?>" name="password" id="password" placeholder="Password" value="<?php echo isset($_SESSION['password']) ? $_SESSION['password'] : ''; ?>" required>
                         <div class="error-validacion"><?php echo isset($_SESSION['passwordError']) ? $_SESSION['passwordError'] : ''; ?></div>
                     </div>
-                    <button type="submit" value="enviar" id="siguiete" class="btn btn-primary">Siguiente ></button>
+                    <br>
+                    <div class="d-flex justify-content-end">
+                        <button type="submit" value="enviar" id="siguiente" class="btn btn-primary">Siguiente <strong>></strong></button>
+                    </div>
                 </form>
                 <br>    
             </div>

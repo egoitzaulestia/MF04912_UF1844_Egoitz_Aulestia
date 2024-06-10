@@ -118,7 +118,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         </div>
                         <div class="error-validacion"><?php echo isset($_SESSION['fechaNacimientoError']) ? $_SESSION['fechaNacimientoError'] : ''; ?></div>
                     </div>
-                    <button type="submit" value="enviar" id="siguiente" class="btn btn-primary">Siguiente ></button>
+                    <br>
+                    <div class="d-flex justify-content-between">
+                        <button type="button" onclick="window.location.href='index.php'" class="btn btn-primary"><strong><</strong> Anterior</button>
+                        <button type="submit" value="enviar" id="siguiente" class="btn btn-primary">Siguiente <strong>></strong></button>
+                    </div>
                 </form>
                 <br>
             </div>

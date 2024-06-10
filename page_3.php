@@ -49,7 +49,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     // Validación de ciudad
-    function normalizeString($str) {
+    function normalizeString($str)
+    {
         $str = strtolower($str);
         $str = preg_replace('/[áàäâ]/u', 'a', $str);
         $str = preg_replace('/[éèëê]/u', 'e', $str);
@@ -128,7 +129,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
 // Función para formatear el número de teléfono
-function formatearTelefono($telefono) {
+function formatearTelefono($telefono)
+{
     return substr($telefono, 0, 3) . ' ' . substr($telefono, 3, 3) . ' ' . substr($telefono, 6);
 }
 
@@ -152,15 +154,19 @@ $telefonoFormateado = isset($_SESSION['telefono']) ? formatearTelefono($_SESSION
         <div class="row">
             <?php include 'inc/aside.php'; ?>
             <div class="col-sm-8 col-10 card" id="Contenido">
-                <br>    
+                <br>
                 <h1>Revisar Datos</h1><br>
                 <p><strong>Nombre:</strong> <?php echo ucfirst($_SESSION['nombre']); ?> <a href="index.php">Editar</a></p>
                 <p><strong>Email:</strong> <?php echo $_SESSION['email']; ?> <a href="index.php">Editar</a></p>
                 <p><strong>Teléfono:</strong> <?php echo $telefonoFormateado; ?> <a href="page_2.php">Editar</a></p>
                 <p><strong>Ciudad:</strong> <?php echo ucfirst($_SESSION['ciudad']); ?> <a href="page_2.php">Editar</a></p>
                 <p><strong>Fecha de Nacimiento:</strong> <?php echo $_SESSION['fecha_nacimiento']; ?> <a href="page_2.php">Editar</a></p>
+                <br>
                 <form action="page_4.php" method="POST">
-                    <button type="submit" class="btn btn-primary">Confirmar Envío</button>
+                    <div class="col-12 d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary btn-largo">Confirmar Envío</button>
+                    </div>
+                    <br>
                 </form>
                 <br>
             </div>
