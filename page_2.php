@@ -12,7 +12,9 @@ if (!isset($_SESSION['clienteip'])) {
 $nombreError = $mailError = $passwordError = '';
 
 // Limpiar errores anteriores
-unset($_SESSION['telefonoError'], $_SESSION['ciudadError'], $_SESSION['fechaNacimientoError']);
+unset($_SESSION['nombreError'], $_SESSION['mailError'], $_SESSION['passwordError']);
+
+
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $nombre = recogerVar($_POST['nombre']);

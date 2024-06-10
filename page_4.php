@@ -37,8 +37,8 @@ $telefonoFormateado = isset($_SESSION['telefono']) ? formatearTelefono($_SESSION
         <div class="row">
             <?php include 'inc/aside.php'; ?>
             <div class="col-sm-8 col-10" id="Contenido">
-                <br><br>
-                <h1>Datos Enviados Correctamente</h1>
+                <br>
+                <h1>Datos Enviados Correctamente</h1><br>
                 <p><strong>Nombre:</strong> <?php echo ucfirst($_SESSION['nombre']); ?></p>
                 <p><strong>Email:</strong> <?php echo $_SESSION['email']; ?></p>
                 <p><strong>Teléfono:</strong> <?php echo $telefonoFormateado; ?></p>

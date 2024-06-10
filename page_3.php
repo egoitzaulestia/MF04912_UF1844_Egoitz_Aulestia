@@ -13,6 +13,7 @@ if (!isset($_SESSION['clienteip'])) {
     exit;
 }
 
+unset($_SESSION['telefonoError'], $_SESSION['ciudadError'], $_SESSION['fechaNacimientoError']);
 // Inicializamos vacías las variables de error del segundo paso del formulario
 $telefonoError = $ciudadError = $fechaNacimientoError = '';
 
