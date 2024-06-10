@@ -4,7 +4,7 @@
 session_start();
 // Comprobamos si el/la usuari@ ha inciado sesión
 if (!isset($_SESSION['clienteip'])) {
-    header("location:caducada.html");
+    header("location:caducada.php");
     exit;
 }
 

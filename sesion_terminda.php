@@ -1,16 +1,18 @@
-<?php 
+<?php
 include 'inc/config.php';
 include 'inc/functions_B.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <?php include 'inc/head.php'; ?>
     <title><?php echo $sitioTitle . ' - ' . $paginaTitle ?></title>
 </head>
+
 <body>
     <div class="container-lg">
-        <?php include 'inc/cabecera.php'; ?>
+        <?php include 'inc/cabecera_2.php'; ?>
         <div class="row">
             <?php include 'inc/aside.php'; ?>
 
@@ -27,5 +29,9 @@ include 'inc/functions_B.php';
             </div>
             <?php include 'inc/aside.php'; ?>
         </div>
-    </div> 
+        <?php include 'inc/footer.php'; ?>
+    </div>
+    <?php include 'inc/scripts_finales.php'; ?>
+</body>
+
 </html>

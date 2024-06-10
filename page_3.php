@@ -9,7 +9,7 @@ include 'inc/functions_B.php';
 session_start();
 // Comprobamos si el/la usuari@ ha iniciado sesión
 if (!isset($_SESSION['clienteip'])) {
-    header("location:caducada.html");
+    header("location:caducada.php");
     exit;
 }
 
