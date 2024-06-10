@@ -1,37 +1,40 @@
+/* 
+    //////////////////
+    ARCHIVO STYLES.CSS
+    //////////////////
+
+    Contiene Los estilos de CSS creados.
+*/
+
+
+/* /////////////// */
+/* REGLA UNIVERSAL */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ////////// */
+
+/* ///////// */
 /* ETIQUETAS */
-/* //////// */
 
 div[class*="col"] {
     /* border: 1px solid black; */
     color: #070fab;
 }
 
-
-
-/* /////// */
-/* CLASES */
-/* ///// */
-
-
-.high-text {
-    font-size: 55px;
-}
-
 body {
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-#navegador .active {
-    background-color: blue;
-    color: white;
-    
+
+/* ////// */
+/* CLASES */
+
+.high-text {
+    font-size: 55px;
 }
 
 .col-4 button {
@@ -52,7 +55,6 @@ body {
 .card-2 {
     margin-top: 34px;
     margin-bottom: 34px;
-    /* box-shadow: 0 4px 8px #ff8bff4d; */
     border: 1.8px solid #ff8bff;
     padding-left: 21px;
     padding-right: 21px;
@@ -63,6 +65,11 @@ body {
 
 .back-index {
     font-weight: bold;
+}
+
+#navegador .active {
+    background-color: blue;
+    color: white;   
 }
 
 .ego_deactive {

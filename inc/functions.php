@@ -1,3 +1,11 @@
+<!-- 
+    //////////////////
+    INCLUDE FOOTER.PHP 
+    //////////////////
+
+    Contiene la información del footer, el copywrite y la variable de configuración con mi nombre. 
+-->
+    
 <?php
 
 // Función para limpiar las variables recogidas

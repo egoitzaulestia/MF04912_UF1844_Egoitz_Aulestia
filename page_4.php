@@ -22,6 +22,8 @@ function formatearTelefono($telefono) {
 $telefonoFormateado = isset($_SESSION['telefono']) ? formatearTelefono($_SESSION['telefono']) : '';
 ?>
 
+<!-- Comienzo del HTML(5)  -->
+
 <!doctype html>
 <html lang="es">
 

@@ -14,8 +14,9 @@ $nombreError = $mailError = $passwordError = '';
 // Limpiar errores anteriores
 unset($_SESSION['nombreError'], $_SESSION['mailError'], $_SESSION['passwordError']);
 
-
-
+/* 
+    Cominezo de VALIDACIÓN PHP ////////////////////////
+*/
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $nombre = recogerVar($_POST['nombre']);
     $email = recogerVar($_POST['email']);
@@ -58,6 +59,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
+<!-- Final de VALIDACIÓN PHP //////////////////////// -->
+
+<!-- Comienzo del HTML(5)  -->
 
 <!doctype html>
 <html lang="es">

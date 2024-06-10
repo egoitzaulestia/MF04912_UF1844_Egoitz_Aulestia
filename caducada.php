@@ -8,9 +8,10 @@
 -->
 
 <!-- Includes de los archivos de configuració y funciones  -->
-
 <?php include 'inc/config.php'; ?>
 <?php include 'inc/functions.php'; ?>
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 <!-- Comienzo del HTML(5)  -->
 

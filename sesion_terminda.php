@@ -2,6 +2,9 @@
 include 'inc/config.php';
 include 'inc/functions_B.php';
 ?>
+
+<!-- Comienzo del HTML(5)  -->
+
 <!DOCTYPE html>
 <html lang="en">
 

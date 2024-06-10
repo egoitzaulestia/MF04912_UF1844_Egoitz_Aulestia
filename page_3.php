@@ -139,6 +139,8 @@ $telefonoFormateado = isset($_SESSION['telefono']) ? formatearTelefono($_SESSION
 
 ?>
 
+<!-- Comienzo del HTML(5)  -->
+
 <!doctype html>
 <html lang="es">
 
