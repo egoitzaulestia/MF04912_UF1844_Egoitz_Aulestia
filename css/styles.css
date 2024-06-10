@@ -9,8 +9,10 @@
 /* //////// */
 
 div[class*="col"] {
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    color: #070fab;
 }
+
 
 
 /* /////// */
@@ -34,8 +36,16 @@ body {
     color: white;
 }
 
+
+.ego_deactive {
+    background-color: #ffe7ff;
+    border-radius: 5px;
+}
+
 .ego_active {
     background-color: #ff8bff;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
 /* Añadido: Estilo para inputs con error */
@@ -63,4 +73,14 @@ body {
 .fecha-nacimiento select {
     width: auto;
     flex: 1; /* Ajusta el tamaño de cada select */
+}
+
+.footer-text {
+    text-align: center;
+    color: #070fab;
+}
+
+.footer-bg {
+    background-color: #ffe7ff;
+    border-radius: 5px;
 }
