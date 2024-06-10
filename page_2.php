@@ -73,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <?php include 'inc/navegacion.php'; ?>
         <div class="row">
             <?php include 'inc/aside.php'; ?>
-            <div class="col-sm-8 col-10" id="Contenido">
+            <div class="col-sm-8 col-10 card" id="Contenido">
                 <form action="page_3.php" method="POST">
                     <br>
                     <h1>Formulario 2</h1><br>
@@ -92,12 +92,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <div class="mb-3">
                         <label for="fecha_nacimiento" class="form-label"><strong>Fecha de Nacimiento: *</strong></label>
                         <div class="fecha-nacimiento">
-                            <select name="dia" id="dia" class="form-control">
+                            <select name="dia" id="dia" class="form-control <?php echo !empty($_SESSION['fechaNacimientoError']) ? 'input-error' : ''; ?>">
                                 <?php for ($i = 1; $i <= 31; $i++) : ?>
                                     <option value="<?php echo $i; ?>" <?php echo (isset($_SESSION['dia']) && $_SESSION['dia'] == $i) ? 'selected' : ''; ?>><?php echo $i; ?></option>
                                 <?php endfor; ?>
                             </select>
-                            <select name="mes" id="mes" class="form-control">
+                            <select name="mes" id="mes" class="form-control <?php echo !empty($_SESSION['fechaNacimientoError']) ? 'input-error' : ''; ?>">
                                 <?php
                                 $meses = array(
                                     1 => 'Enero', 2 => 'Febrero', 3 => 'Marzo', 4 => 'Abril',
@@ -108,7 +108,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                     <option value="<?php echo $num; ?>" <?php echo (isset($_SESSION['mes']) && $_SESSION['mes'] == $num) ? 'selected' : ''; ?>><?php echo $nombre; ?></option>
                                 <?php endforeach; ?>
                             </select>
-                            <select name="anio" id="anio" class="form-control">
+                            <select name="anio" id="anio" class="form-control <?php echo !empty($_SESSION['fechaNacimientoError']) ? 'input-error' : ''; ?>">
                                 <?php
                                 $currentYear = date('Y');
                                 for ($i = $currentYear; $i >= 1900; $i--) : ?>

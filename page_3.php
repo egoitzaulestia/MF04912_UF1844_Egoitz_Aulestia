@@ -151,7 +151,7 @@ $telefonoFormateado = isset($_SESSION['telefono']) ? formatearTelefono($_SESSION
         <?php include 'inc/navegacion.php'; ?>
         <div class="row">
             <?php include 'inc/aside.php'; ?>
-            <div class="col-sm-8 col-10" id="Contenido">
+            <div class="col-sm-8 col-10 card" id="Contenido">
                 <br>    
                 <h1>Revisar Datos</h1><br>
                 <p><strong>Nombre:</strong> <?php echo ucfirst($_SESSION['nombre']); ?> <a href="index.php">Editar</a></p>

@@ -34,18 +34,52 @@ body {
 #navegador .active {
     background-color: blue;
     color: white;
+    
 }
 
+.col-4 button {
+    display: block;
+    margin: 0 auto;
+}
+
+.card {
+    margin-top: 34px;
+    margin-bottom: 34px;
+    box-shadow: 0 4px 8px #ff8bff4d;
+    border: 1.8px solid #ff8bff;
+    padding-left: 21px;
+    padding-right: 21px;
+}
+
+.card-2 {
+    margin-top: 34px;
+    margin-bottom: 34px;
+    /* box-shadow: 0 4px 8px #ff8bff4d; */
+    border: 1.8px solid #ff8bff;
+    padding-left: 21px;
+    padding-right: 21px;
+    border-radius: 13px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+}
+
+.back-index {
+    font-weight: bold;
+}
 
 .ego_deactive {
     background-color: #ffe7ff;
     border-radius: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .ego_active {
     background-color: #ff8bff;
     border-radius: 5px;
     font-weight: bold;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 /* Añadido: Estilo para inputs con error */
@@ -83,4 +117,6 @@ body {
 .footer-bg {
     background-color: #ffe7ff;
     border-radius: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }

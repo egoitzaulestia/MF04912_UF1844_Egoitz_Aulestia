@@ -33,10 +33,9 @@ $telefonoFormateado = isset($_SESSION['telefono']) ? formatearTelefono($_SESSION
 <body>
     <div class="container-lg">
         <?php include 'inc/cabecera.php'; ?>
-        <?php include 'inc/navegacion.php'; ?>
         <div class="row">
             <?php include 'inc/aside.php'; ?>
-            <div class="col-sm-8 col-10" id="Contenido">
+            <div class="col-sm-8 col-10 card" id="Contenido">
                 <br>
                 <h1>Datos Enviados Correctamente</h1><br>
                 <p><strong>Nombre:</strong> <?php echo ucfirst($_SESSION['nombre']); ?></p>
@@ -44,10 +43,11 @@ $telefonoFormateado = isset($_SESSION['telefono']) ? formatearTelefono($_SESSION
                 <p><strong>Teléfono:</strong> <?php echo $telefonoFormateado; ?></p>
                 <p><strong>Ciudad:</strong> <?php echo ucfirst($_SESSION['ciudad']); ?></p>
                 <p><strong>Fecha de Nacimiento:</strong> <?php echo $_SESSION['fecha_nacimiento']; ?></p>
-                <br><br>
+                <br>
             </div>
             <?php include 'inc/aside.php'; ?>
         </div>
+        <br>
         <?php include 'inc/footer.php'; ?>
     </div>
     <?php include 'inc/scripts_finales.php'; ?>

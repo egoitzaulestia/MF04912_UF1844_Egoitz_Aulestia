@@ -20,7 +20,7 @@ setcookie('pagina', $_SERVER['PHP_SELF']);
         <?php include 'inc/navegacion.php'; ?>
         <div class="row">
             <?php include 'inc/aside.php'; ?>
-            <div class="col-sm-8 col-10" id="Contenido">
+            <div class="col-sm-8 col-10 card" id="Contenido">
                 <form action="page_2.php" method="POST">
                     <br>
                     <h1>Formulario 1</h1><br>
