@@ -6,6 +6,5 @@ function recogerVar($data) {
     return $data;
 }
 
-
 ?>
 

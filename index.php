@@ -11,7 +11,6 @@
 <?php include 'inc/functions.php'; ?>
 
 <!-- Iniciamos la sesión. Creamos la variable de sesión clienteip mediante $_SESSION['clienteip'] = $_SERVER['REMOTE_ADDR'] -->
-
 <?php
 session_start();
 $_SESSION['clienteip'] = $_SERVER['REMOTE_ADDR'];
